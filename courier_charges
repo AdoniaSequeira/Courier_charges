@@ -1,0 +1,10 @@
+def courier_charge(weight, distance):
+    if weight <= 50 and distance < 30:
+      return 75
+    elif weight > 50 and distance > 30:
+      rate = 75
+      weight -= 50
+      distance -= 30
+      rate += ((weight / 5) * 10) + ((distance / 5) * 25)
+      print(rate)
+courier_charge(55,35) 
